@@ -22,7 +22,17 @@ Start by installing duckdb-odbc and create a new 64-bit ODBC dsn for DuckDB.
 
 Once the setup is complete, you can include the add-in in any excel workbook by searching for `Add-ins` in the global workbook search, or navigating to the `Developer` tab >> `Excel Add-ins`. 
 
-From here, browse for the `excel_duckdb.xlam` file to raw dog some sql straight into the formula bar for `q4 Financials - v2 Final - final - copy.xlsx` you spent all night working on!
+From here, click browse and add the `excel_duckdb.xlam` file as an add-in to raw dog some sql straight into the formula bar for `q4 Financials - v2 Final - final - copy.xlsx` that you spent all night working on!
+
+Additionally, you will most likely have to add the location of the `excel_duckdb.xlam` file as a trusted location for the macro to work. This
+can be accomplished by: 
+
+1. File >> Options >> Trust Center >> Trust Center Settings
+1. Choose the Trusted Locations tab
+1. Add new location 
+1. Browse to the folder the `excel_duckdb.xlam` file is located 
+
+You may need to modify other permission, or settings to enable macros. Mileage will vary depending on your setup. 
 
 
 ## Useage
