@@ -1,11 +1,10 @@
 ## excel-duckdb
 
-Excel-duckdb joins the most powerful analytics platform on the planet with duckdb.
+Excel-duckdb joins the most powerful analytics platform on the planet with duckdb. Excel-duckdb is a poorly written vba-add-in that can be added to any excel file.
 
-Excel-duckdb is a very poorly written vba-add-in that can be added to any excel file. 
+Execute sql queries using duckdb against local or remote files, databases, or object storage all from excel! 
 
-Execute queries against local or remote files, databases, or object storage. 
-
+Jupyter notebooks no more with excel X duckdb!
 
 ## Installation
 
@@ -35,14 +34,13 @@ can be accomplished by:
 You may need to modify other permission, or settings to enable macros. Mileage will vary depending on your setup. 
 
 
-## Useage
-
-Users will be limited to 255 characters per query.
+## Usage
 
 Query parquet files in object storage, local files on your machine, or even [MotherDuck](https://motherduck.com/)!
 
 TODO: add credential management that is not storing credentials in plain text in VBA. 
 
+Users will be limited to 255 characters per query.
 
 ```
 =duckdb("
@@ -55,15 +53,16 @@ TODO: add credential management that is not storing credentials in plain text in
 
 The response is a dynamic array which can then be shared, or further analyzed with the full power and might of, microsoft excel. 
 
-Jupyter notebooks no more with excel X duckdb.
-
 
 ## Issues 
 
 No testing has been done. 
 
-If you run into issues, ensure that `Microsoft ActiveX Data Objects 6.1 Lirbary` has been toggled as a reference. 
+If you run into issues, try toggling off the `Protechted View` check boxes in the trust center, and 
+ensure that `Microsoft ActiveX Data Objects 6.1 Lirbary` has been toggled as a reference from the developer tab. 
 
+- `Developer` Ribbon >> Visual Basic (`alt + F11`)
+- Tools >> References >> `Microsoft ActiveX Data Objects 6.1 Lirbary`
 
 ## Road Map
 
